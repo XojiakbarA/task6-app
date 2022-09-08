@@ -26,6 +26,7 @@ const App = () => {
     }
     const handleErrorChange = (e) => {
         setRows([])
+        setCount(20)
         const value = Number(e.target.value)
         if (value > 1000) return
         setError(e.target.value)
